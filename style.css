@@ -1,0 +1,112 @@
+/*===media selector===*/
+
+/*desktop*/
+@media screen and (min-width: 1024px){
+
+}
+/*tablet*/
+@media screen and (min-width: 450px){
+
+}
+/*phone*/
+@media screen and (min-width: 340px){
+
+}
+
+/*===base element===*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 120vh;
+    display: grid;
+    grid-template-rows: 1fr 18fr 1fr;
+}
+
+/*===navbar===*/
+.navbar{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+
+
+}
+
+.bar{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    border-radius: 25px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+    overflow: hidden;
+}
+
+.bar-items{
+    display: grid;
+    place-items: center center;
+    width: 100px;
+}
+.bar-items:hover{
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+.bar-items:active{
+    background: #e0e0e0;
+    box-shadow: inset 20px 20px 60px #bebebe,
+    inset -20px -20px 60px #ffffff;
+}
+
+.github{
+    display: grid;
+    grid-column-start: -1;
+    place-items: center center;
+    overflow: hidden;
+    width: 100px;
+    background: black;
+}
+.github img{
+    height: 40px;
+    height: 40px;
+}
+
+.head_ico{
+    display: grid;
+    place-items: center center;
+    overflow: hidden;
+    margin-left: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+.head_ico img{
+    height: 40px;
+    width: 40px;
+}
+
+
+/*===footer===*/
+.footer{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    background: black;
+}
+
+.beian{
+    color: white;
+    grid-column-start: 2;
+    grid-row: 2;
+}
+
+.beian a{
+    color: white;
+}
